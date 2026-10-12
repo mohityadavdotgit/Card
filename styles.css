@@ -1,0 +1,186 @@
+/* Custom Reset and Variables Initialization */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cls-main-bg: #0d192c;
+  --cls-card-bg: #15263f;
+  --cls-accent-cyan: #00fff8;
+  --cls-text-white: #ffffff;
+  --cls-text-soft-blue: #8bacd9;
+  --cls-line-dark: #2e405a;
+}
+
+/* Base Body System Configuration */
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--cls-main-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+/* Main Component Card Wrapper */
+main.card {
+  background-color: var(--cls-card-bg);
+  width: 100%;
+  max-width: 350px;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* Card Artwork Layout and Presentation Elements */
+.card__images {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: var(--cls-line-dark);
+}
+
+.card__images .nft-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Hover Interactive Overlay Block */
+.card__image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 248, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card__images:hover .card__image-overlay {
+  opacity: 1;
+}
+
+/* Component Content Headings and Text Configurations */
+.card__title {
+  margin-top: 1.5rem;
+}
+
+.card__title h1 {
+  color: var(--cls-text-white);
+  font-size: 1.35rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.card__title h1:hover {
+  color: var(--cls-accent-cyan);
+}
+
+#info {
+  color: var(--cls-text-soft-blue);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+/* Horizontal Statistical Fields Configuration */
+.card__time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.25rem;
+}
+
+.card__time-left,
+.card__time-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.card__time-left {
+  color: var(--cls-accent-cyan);
+}
+
+.card__time-right {
+  color: var(--cls-text-soft-blue);
+  font-weight: 400;
+}
+
+/* Layout Structural Separation Elements */
+.card__divider {
+  border: none;
+  height: 1px;
+  background-color: var(--cls-line-dark);
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Creator Profile Block Component Structure */
+.card__creator {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card__creator img {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  border: 1px solid var(--cls-text-white);
+  object-fit: cover;
+}
+
+.card__creator p {
+  color: var(--cls-text-soft-blue);
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+
+.card__creator p a {
+  color: var(--cls-text-white);
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.2s ease;
+}
+
+.card__creator p a:hover {
+  color: var(--cls-accent-cyan);
+}
+
+/* Global Application Footer Framework styling */
+footer {
+  font-size: 0.75rem;
+  color: var(--cls-text-soft-blue);
+  text-align: center;
+  line-height: 1.5;
+}
+
+footer a {
+  color: var(--cls-accent-cyan);
+  text-decoration: none;
+  font-weight: 600;
+  transition: text-decoration 0.2s ease;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

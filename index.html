@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NFT Preview Card Component</title>
+  <!-- Google Fonts: Outfit -->
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main class="card">
+    <!-- NFT Image Container -->
+    <div class="card__images">
+      <img src="assets/images/image-equilibrium.jpg" alt="Equilibrium NFT Artwork" class="nft-main-img">
+      <!-- Hover Overlay Interaction -->
+      <div class="card__image-overlay">
+        <svg width="48" height="48" xmlns="http://w3.org"><path d="M24,0C10.745,0,0,10.745,0,24s10.745,24,24,24s24-10.745,24-24S37.255,0,24,0z M24,36c-6.627,0-12-5.373-12-12 s5.373-12,12-12s12,5.373,12,12S30.627,36,24,36z M24,16c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S28.411,16,24,16z" fill="#FFF"/></svg>
+      </div>
+    </div>
+
+    <!-- Title Header -->
+    <div class="card__title">
+      <h1>Equilibrium #3429</h1>
+    </div>
+
+    <!-- Description Paragraph -->
+    <p id="info">Our Equilibrium collection promotes balance and calm.</p>
+
+    <!-- Pricing and Countdown Statistics Container -->
+    <div class="card__time">
+      <div class="card__time-left">
+        <svg width="11" height="18" xmlns="http://w3.org"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.263ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>
+        <span>0.041 ETH</span>
+      </div>
+      <div class="card__time-right">
+        <svg width="17" height="17" xmlns="http://w3.org"><path d="M8.305 0a8.305 8.305 0 1 0 0 16.61 8.305 8.305 0 0 0 0-16.61Zm0 14.948a6.643 6.643 0 1 1 0-13.286 6.643 6.643 0 0 1 0 13.286Zm.83-7.474h3.322v1.661H7.474V3.322h1.661v4.152Z" fill="#8BACD9"/></svg>
+        <span>3 days left</span>
+      </div>
+    </div>
+
+    <!-- Divider Line -->
+    <hr class="card__divider">
+
+    <!-- Content Creator Profile Block -->
+    <div class="card__creator">
+      <img src="assets/images/image-avatar.png" alt="Mohit Yadav Avatar">
+      <p>Creation of <a href="https://github.com" target="_blank" rel="noopener noreferrer">Mohit Yadav</a></p>
+    </div>
+  </main>
+
+  <!-- Attributions Platform Footer Component -->
+  <footer>
+    Challenge by <a href="https://crio.do" target="_blank" rel="noopener noreferrer">Crio.Do</a>. 
+    Coded by <a href="https://github.com" target="_blank" rel="noopener noreferrer">Mohit Yadav</a>.
+  </footer>
+
+</body>
+</html>
